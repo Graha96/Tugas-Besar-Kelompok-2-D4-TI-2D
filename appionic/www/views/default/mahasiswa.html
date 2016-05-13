@@ -1,0 +1,15 @@
+<ion-view>
+		<ion-nav-back-button side="left">
+		</ion-nav-back-button>
+		<ion-nav-buttons side="left">
+			<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+			</button>
+		</ion-nav-buttons>
+		<ion-nav-buttons side="right">
+			<button class="button-icon icon ion-ios-search "></button>
+			<div class="search" ng-repeat="data in mahasiswa | limitTo:limit1">
+				<input ng-model="search.searchText" ng-change="filter()" type="text" placeholder="cari mahasiswa {{ data.kelas_nama }}" />
+			</div>
+		</ion-nav-buttons>
+	</ion-nav-bar>
+</ion-view>
